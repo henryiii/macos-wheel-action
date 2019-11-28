@@ -1,0 +1,10 @@
+name: 'macOS Wheel'
+description: 'Make macOS binary wheels'
+inputs:
+  versions:  # id of input
+    description: 'A list of versions to create'
+    required: false
+    default: "3.8.0,3.7.3,3.6.8,2.7.16"
+runs:
+  using: 'node12'
+  main: 'index.js'
